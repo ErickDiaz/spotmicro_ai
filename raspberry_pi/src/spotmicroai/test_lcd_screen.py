@@ -4,11 +4,10 @@ import time
 import queue
 
 from lcd_screen_controller import LCD_16x2_I2C_driver
+from utilities.config import Config
 
-LCD_SCREEN_CONTROLLER_I2C_ADDRESS = 27
 
-
-i2c_address = int(LCD_SCREEN_CONTROLLER_I2C_ADDRESS, 0)
+i2c_address = int(Config().get(Config.LCD_SCREEN_CONTROLLER_I2C_ADDRESS), 0)
 
 screen = LCD_16x2_I2C_driver.lcd(address=i2c_address)
 
