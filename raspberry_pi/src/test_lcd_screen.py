@@ -3,8 +3,8 @@ import sys
 import time
 import queue
 
-from lcd_screen_controller import LCD_16x2_I2C_driver
-from utilities.config import Config
+from spotmicroai.lcd_screen_controller import LCD_16x2_I2C_driver
+from spotmicroai.utilities.config import Config
 
 
 i2c_address = int(Config().get(Config.LCD_SCREEN_CONTROLLER_I2C_ADDRESS), 0)
