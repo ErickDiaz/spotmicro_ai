@@ -13,5 +13,5 @@ print("Initializing ServoKit")
 kit = ServoKit(channels=16, i2c=i2c_bus0)
 # kit[0] is the bottom servo
 
-kit.servo[0].angle=180
-kit.servo[1].angle=0
+
+kit.servo[11].angle=90
